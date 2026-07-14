@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="background-elements">
         <div class="blob blob-1"></div>
@@ -28,7 +30,10 @@
                 <div class="icon">💡</div>
                 <div class="content">
                     <h3>Base Assumptions (Washi Pay Model)</h3>
-                    <p>Washi processes <strong>ALL payments</strong> in-app and pays partners every Friday. Gateway: <strong>Stitch (EFT ~1.5%)</strong> or <strong>Paystack (Cards ~2.9% + R1)</strong>. Average car wash price is based on the <strong>'Usual' Wash at R200</strong> (Gateway fee ~R6.80). Firebase costs are <strong>~R1.00</strong> per active user/month.</p>
+                    <p>Washi processes <strong>ALL payments</strong> in-app and pays partners every Friday. Gateway:
+                        <strong>Stitch (EFT ~1.5%)</strong> or <strong>Paystack (Cards ~2.9% + R1)</strong>. Average car
+                        wash price is based on the <strong>'Usual' Wash at R200</strong> (Gateway fee ~R6.80). Firebase
+                        costs are <strong>~R1.00</strong> per active user/month.</p>
                 </div>
             </div>
         </section>
@@ -41,25 +46,35 @@
                     <h2>The "Free Washes" Model</h2>
                     <span class="badge">The Original Concept</span>
                 </div>
-                <p class="description">The user pays a high monthly subscription fee and gets a set number of "free" car washes per month.</p>
-                
+                <p class="description">The user pays a high monthly subscription fee and gets a set number of "free" car
+                    washes per month.</p>
+
                 <div class="metrics">
-                    <div class="metric"><span class="label">Customer Price</span><span class="value">R349 / mo</span><span class="subtext">for 4 washes</span></div>
-                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R11.80</span><span class="subtext">per sub charge</span></div>
-                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">R349 /
+                            mo</span><span class="subtext">for 4 washes</span></div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R11.80</span><span
+                            class="subtext">per sub charge</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span
+                            class="subtext">per month</span></div>
                 </div>
-                
+
                 <div class="liability">
-                    <strong>Payment Flow:</strong> Washi processes the R349 sub in-app. On Friday, Washi pays the partner ~R120 (negotiated rate) per wash used. Gateway fee on R349 is ~R11.00.
+                    <strong>Payment Flow:</strong> Washi processes the R349 sub in-app. On Friday, Washi pays the
+                    partner ~R120 (negotiated rate) per wash used. Gateway fee on R349 is ~R11.00.
                 </div>
-                
+
                 <div class="profit-analysis">
-                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200 'Usual' Wash)</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px;">Net sub revenue: ~R337.</p>
+                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200
+                        'Usual' Wash)</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px;">Net sub revenue: ~R337.
+                    </p>
                     <ul style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px; margin-left: 20px;">
                         <li><strong>1-2 washes:</strong> Washi profits (R97 to R217/mo).</li>
-                        <li style="color: #ef4444;"><strong>3+ washes:</strong> Washi <strong>loses money</strong> (-R23+ per user).</li>
-                        <li style="color: #10b981; margin-top: 5px;"><strong>To scale safely:</strong> You must charge <strong>~R599/mo</strong> to ensure Washi remains profitable even if a user uses all 4 washes.</li>
+                        <li style="color: #ef4444;"><strong>3+ washes:</strong> Washi <strong>loses money</strong>
+                            (-R23+ per user).</li>
+                        <li style="color: #10b981; margin-top: 5px;"><strong>To scale safely:</strong> You must charge
+                            <strong>~R599/mo</strong> to ensure Washi remains profitable even if a user uses all 4
+                            washes.</li>
                     </ul>
                 </div>
 
@@ -75,11 +90,14 @@
                     <div class="cons">
                         <h4>Disadvantages</h4>
                         <div class="alert warning">
-                            <strong>⚠️ High financial risk</strong><br>If a user washes 3 or more times a month, Washi takes a massive loss on that customer.
+                            <strong>⚠️ High financial risk</strong><br>If a user washes 3 or more times a month, Washi
+                            takes a massive loss on that customer.
                         </div>
                         <ul>
-                            <li>Very high barrier to entry for regular consumers. R349 is a lot to commit to upfront.</li>
-                            <li>Hard to negotiate with car washes as Washi forces them to accept a severely discounted rate.</li>
+                            <li>Very high barrier to entry for regular consumers. R349 is a lot to commit to upfront.
+                            </li>
+                            <li>Hard to negotiate with car washes as Washi forces them to accept a severely discounted
+                                rate.</li>
                         </ul>
                     </div>
                 </div>
@@ -91,25 +109,36 @@
                     <span class="model-number">02</span>
                     <h2>The "Upfront Discount" Model</h2>
                 </div>
-                <p class="description">The user pays a medium subscription fee to unlock a massive flat discount (e.g., 40% off) at any partner car wash.</p>
-                
+                <p class="description">The user pays a medium subscription fee to unlock a massive flat discount (e.g.,
+                    40% off) at any partner car wash.</p>
+
                 <div class="metrics">
-                    <div class="metric"><span class="label">Customer Price</span><span class="value">R149 / mo</span></div>
-                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R5.90</span><span class="subtext">per sub charge</span></div>
-                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">R149 / mo</span>
+                    </div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R5.90</span><span
+                            class="subtext">per sub charge</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span
+                            class="subtext">per month</span></div>
                 </div>
-                
+
                 <div class="liability">
-                    <strong>Payment Flow:</strong> User pays the discounted R120 via Washi App at the wash (40% off R200). Washi processes R120 (gateway fee ~R4.48) and pays the partner R120 on Friday. 
+                    <strong>Payment Flow:</strong> User pays the discounted R120 via Washi App at the wash (40% off
+                    R200). Washi processes R120 (gateway fee ~R4.48) and pays the partner R120 on Friday.
                 </div>
-                
+
                 <div class="profit-analysis">
-                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200 'Usual' Wash)</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px;">Net sub revenue: ~R143. Partner takes the 40% discount hit (gets R120). Washi absorbs the ~R4.48 transaction fee per wash.</p>
+                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200
+                        'Usual' Wash)</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px;">Net sub revenue: ~R143.
+                        Partner takes the 40% discount hit (gets R120). Washi absorbs the ~R4.48 transaction fee per
+                        wash.</p>
                     <ul style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px; margin-left: 20px;">
                         <li><strong>Profitable up to 31 washes/mo.</strong></li>
-                        <li style="color: #ef4444;"><strong>Partner loss:</strong> Partners lose R80 per wash, making this nearly impossible to scale.</li>
-                        <li style="color: #10b981; margin-top: 5px;"><strong>To scale safely:</strong> Washi must subsidize the discount so partners don't take the hit. To afford this subsidy, Washi would need to charge <strong>~R299/mo</strong>.</li>
+                        <li style="color: #ef4444;"><strong>Partner loss:</strong> Partners lose R80 per wash, making
+                            this nearly impossible to scale.</li>
+                        <li style="color: #10b981; margin-top: 5px;"><strong>To scale safely:</strong> Washi must
+                            subsidize the discount so partners don't take the hit. To afford this subsidy, Washi would
+                            need to charge <strong>~R299/mo</strong>.</li>
                     </ul>
                 </div>
 
@@ -118,99 +147,59 @@
                         <h4>Advantages</h4>
                         <ul>
                             <li>Immediate gratification for the user (savings seen instantly).</li>
-                            <li>Zero financial liability for Washi per wash. The R149 subscription is almost pure profit.</li>
+                            <li>Zero financial liability for Washi per wash. The R149 subscription is almost pure
+                                profit.</li>
                         </ul>
                     </div>
                     <div class="cons">
                         <h4>Disadvantages</h4>
                         <div class="alert caution">
-                            <strong>🛑 Extremely difficult to sell</strong><br>Car washes hate giving massive upfront discounts because it destroys daily cash flow.
+                            <strong>🛑 Extremely difficult to sell</strong><br>Car washes hate giving massive upfront
+                            discounts because it destroys daily cash flow.
                         </div>
                         <ul>
-                            <li>You will struggle to convince premium car washes to accept 40% less money upfront just to be on the app.</li>
+                            <li>You will struggle to convince premium car washes to accept 40% less money upfront just
+                                to be on the app.</li>
                         </ul>
                     </div>
                 </div>
             </article>
 
             <!-- Model 3 -->
-            <article class="model-card glass-card fade-in-up delay-4 highlight-border">
+            <article class="model-card glass-card fade-in-up delay-4">
                 <div class="model-header">
                     <span class="model-number">03</span>
                     <h2>Micro-Sub + Cashback</h2>
-                    <span class="badge success">Current Prototype</span>
+                    <span class="badge primary">Balanced Strategy</span>
                 </div>
-                <p class="description">The user pays a small monthly fee to earn 15% cashback into an in-app wallet every wash. Full price is paid at the till.</p>
-                
+                <p class="description">The user pays a small monthly fee to earn 15% cashback into an in-app wallet
+                    every wash. Full price is paid at the till.</p>
+
                 <div class="metrics">
-                    <div class="metric"><span class="label">Customer Price</span><span class="value">R69 / mo</span></div>
-                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R3.53</span><span class="subtext">per sub charge</span></div>
-                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">R69 / mo</span>
+                    </div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R3.53</span><span
+                            class="subtext">per sub charge</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span
+                            class="subtext">per month</span></div>
                 </div>
-                
+
                 <div class="liability">
-                    <strong>Payment Flow:</strong> User pays R200 in-app. <strong>Cashback is 15% (R30)</strong>. Using the <strong>70/30 Split</strong>: Washi funds 70% (R21) and the Car Wash funds 30% (R9).<br>
-                    <strong>Car Wash Payout:</strong> R200 - R20 (Washi Commission) - R9 (Their Cashback share) = <strong>R171 paid on Friday.</strong>
+                    <strong>Payment Flow:</strong> User pays R200 in-app. <strong>Cashback is 15% (R30)</strong>. Using
+                    the <strong>70/30 Split</strong>: Washi funds 70% (R21) and the Car Wash funds 30% (R9).<br>
+                    <strong>Car Wash Payout:</strong> R200 - R20 (Washi Commission) - R9 (Their Cashback share) =
+                    <strong>R171 paid on Friday.</strong>
                 </div>
-                
+
                 <div class="profit-analysis">
-                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200 'Usual' Wash)</h4>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px;">Net sub revenue: ~R66. Washi Net per wash = Commission (R20) - Gateway (R6.80) - Washi Cashback Portion (R21).</p>
+                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200
+                        'Usual' Wash)</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px;">Net sub revenue: ~R66.
+                        Washi Net per wash = Commission (R20) - Gateway (R6.80) - Washi Cashback Portion (R21).</p>
                     <ul style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px; margin-left: 20px;">
                         <li style="color: #ef4444;">Washi takes a <strong>-R7.80 loss</strong> per wash.</li>
-                        <li><strong>Breakeven: 8.4 washes.</strong> Washi only loses money if a user washes 9+ times a month (very safe).</li>
-                    </ul>
-                </div>
-
-                <div class="pros-cons">
-                    <div class="pros">
-                        <h4>Advantages</h4>
-                        <div class="alert tip">
-                            <strong>💡 Recommended</strong><br>The most balanced and scalable model for South Africa.
-                        </div>
-                        <ul>
-                            <li>Extremely easy to sell to users (R69 is the price of a coffee; it's a "no-brainer").</li>
-                            <li>Easy to sell to car washes: Guaranteed volume, zero cash-handling, and a clean R135 payout every Friday.</li>
-                            <li>Massive psychological "Lock-In": Users won't go to competitors with R100 in their Washi wallet.</li>
-                        </ul>
-                    </div>
-                    <div class="cons">
-                        <h4>Disadvantages</h4>
-                        <ul>
-                            <li>"Double Friction": User pays a sub *and* full price initially, marketing must explain wallet benefits clearly.</li>
-                            <li><strong style="color: #ef4444;">Super-User Risk:</strong> If a user washes 9 or more times a month, Washi will start losing money on them due to the 70/30 split burden.</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Model 4 -->
-            <article class="model-card glass-card fade-in-up delay-5 star-border">
-                <div class="model-header">
-                    <span class="model-number">04</span>
-                    <h2>"Freemium" Wallet Model</h2>
-                    <span class="badge primary">Starbucks Strategy</span>
-                </div>
-                <p class="description">App and wallet are 100% free. Earn 5% cashback. Upgrade to "Washi Plus" for a monthly fee to earn 20% and VIP perks.</p>
-                
-                <div class="metrics">
-                    <div class="metric"><span class="label">Customer Price</span><span class="value">Free / R99</span><span class="subtext">Base / Plus</span></div>
-                    <div class="metric"><span class="label">Payment Cost</span><span class="value">R0 / ~R4.42</span><span class="subtext">Base / Plus</span></div>
-                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
-                </div>
-                
-                <div class="liability">
-                    <strong>Payment Flow:</strong> User pays R200 in-app. <strong>Free users (5% CB)</strong>: Washi funds 100% of the R10 cashback. <strong>Plus users (20% CB = R40)</strong>: Washi funds 70% (R28) and Car Wash funds 30% (R12).<br>
-                    <strong>Car Wash Payout (Free User):</strong> R200 - R20 (Comm) = <strong>R180 on Friday.</strong><br>
-                    <strong>Car Wash Payout (Plus User):</strong> R200 - R20 (Comm) - R12 (Cashback share) = <strong>R168 on Friday.</strong>
-                </div>
-                
-                <div class="profit-analysis">
-                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200 'Usual' Wash)</h4>
-                    <ul style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px; margin-left: 20px;">
-                        <li><strong>Free Users (5% CB):</strong> Net = Commission (R20) - Gateway (R6.80) - Cashback (R10). Washi makes <strong>+R3.20 profit per wash</strong>.</li>
-                        <li><strong>Plus Users (20% CB):</strong> Net Sub: ~R95. Net per wash = Commission (R20) - Gateway (R6.80) - Cashback (R28) = <strong>-R14.80 loss per wash</strong>.</li>
-                        <li><strong>Breakeven (Plus):</strong> 6.4 washes. Washi loses money only if a Plus user washes 7+ times a month.</li>
+                        <li><strong>Breakeven: 8.4 washes.</strong> Washi only loses money if a user washes 9+ times a
+                            month (very safe).</li>
                     </ul>
                 </div>
 
@@ -218,30 +207,103 @@
                     <div class="pros">
                         <h4>Advantages</h4>
                         <div class="alert important">
-                            <strong>🔥 Top Strategy</strong><br>The absolute best strategy for rapid user growth.
+                            <strong>⚖️ Balanced Strategy</strong><br>The most balanced and scalable model for South Africa.
+                        </div>
+                        <ul>
+                            <li>Extremely easy to sell to users (R69 is the price of a coffee; it's a "no-brainer").
+                            </li>
+                            <li>Easy to sell to car washes: Guaranteed volume, zero cash-handling, and a clean R135
+                                payout every Friday.</li>
+                            <li>Massive psychological "Lock-In": Users won't go to competitors with R100 in their Washi
+                                wallet.</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Disadvantages</h4>
+                        <ul>
+                            <li>"Double Friction": User pays a sub *and* full price initially, marketing must explain
+                                wallet benefits clearly.</li>
+                            <li><strong style="color: #ef4444;">Super-User Risk:</strong> If a user washes 9 or more
+                                times a month, Washi will start losing money on them due to the 70/30 split burden.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Model 4 -->
+            <article class="model-card glass-card fade-in-up delay-5 highlight-border">
+                <div class="model-header">
+                    <span class="model-number">04</span>
+                    <h2>"Freemium" Wallet Model</h2>
+                    <span class="badge success">Recommended Strategy</span>
+                </div>
+                <p class="description">App and wallet are 100% free. Earn 5% cashback. Upgrade to "Washi Plus" for a
+                    monthly fee to earn 20% and VIP perks.</p>
+
+                <div class="metrics">
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">Free /
+                            R99</span><span class="subtext">Base / Plus</span></div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">R0 /
+                            ~R4.42</span><span class="subtext">Base / Plus</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span
+                            class="subtext">per month</span></div>
+                </div>
+
+                <div class="liability">
+                    <strong>Payment Flow:</strong> User pays R200 in-app. <strong>Free users (5% CB)</strong>: Washi
+                    funds 100% of the R10 cashback. <strong>Plus users (20% CB = R40)</strong>: Washi funds 70% (R28)
+                    and Car Wash funds 30% (R12).<br>
+                    <strong>Car Wash Payout (Free User):</strong> R200 - R20 (Comm) = <strong>R180 on
+                        Friday.</strong><br>
+                    <strong>Car Wash Payout (Plus User):</strong> R200 - R20 (Comm) - R12 (Cashback share) =
+                    <strong>R168 on Friday.</strong>
+                </div>
+
+                <div class="profit-analysis">
+                    <h4 style="margin-top: 15px; color: var(--text-color); font-size: 0.9rem;">Profitability (R200
+                        'Usual' Wash)</h4>
+                    <ul style="font-size: 0.85rem; color: var(--text-light); margin-top: 5px; margin-left: 20px;">
+                        <li><strong>Free Users (5% CB):</strong> Net = Commission (R20) - Gateway (R6.80) - Cashback
+                            (R10). Washi makes <strong>+R3.20 profit per wash</strong>.</li>
+                        <li><strong>Plus Users (20% CB):</strong> Net Sub: ~R95. Net per wash = Commission (R20) -
+                            Gateway (R6.80) - Cashback (R28) = <strong>-R14.80 loss per wash</strong>.</li>
+                        <li><strong>Breakeven (Plus):</strong> 6.4 washes. Washi loses money only if a Plus user washes
+                            7+ times a month.</li>
+                    </ul>
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Advantages</h4>
+                        <div class="alert tip">
+                            <strong>💡 Recommended</strong><br>The absolute best strategy for rapid user growth and scale.
                         </div>
                         <ul>
                             <li>Zero barrier to entry. Anyone can download and start earning.</li>
-                            <li>Thousands of users can be onboarded quickly, giving leverage when negotiating with partners.</li>
+                            <li>Thousands of users can be onboarded quickly, giving leverage when negotiating with
+                                partners.</li>
                             <li>Highly effective upsell funnel (showing users potential earnings with Washi Plus).</li>
                         </ul>
                     </div>
                     <div class="cons">
                         <h4>Disadvantages</h4>
                         <ul>
-                            <li>Slower path to initial revenue; supporting free users on servers before they upgrade.</li>
-                            <li><strong style="color: #ef4444;">Super-User Risk (Plus):</strong> Washi loses money if a Washi Plus user washes 7 or more times a month.</li>
+                            <li>Slower path to initial revenue; supporting free users on servers before they upgrade.
+                            </li>
+                            <li><strong style="color: #ef4444;">Super-User Risk (Plus):</strong> Washi loses money if a
+                                Washi Plus user washes 7 or more times a month.</li>
                         </ul>
                     </div>
                 </div>
             </article>
         </main>
-        
+
         <footer>
             <p>Washi App &copy; 2026 - Confidential Business Analysis</p>
         </footer>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
