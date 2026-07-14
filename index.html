@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washi App: Business Model Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header class="fade-in-up">
+            <img src="1_cropped.png" alt="Washi Logo" class="logo-img">
+            <h1>Business Model Analysis</h1>
+            <p class="subtitle">Exploring the four primary business strategies for the Washi ecosystem.</p>
+        </header>
+
+        <section class="global-assumptions fade-in-up delay-1">
+            <div class="glass-card">
+                <div class="icon">💡</div>
+                <div class="content">
+                    <h3>Base Assumptions</h3>
+                    <p>Calculations assume an average car wash price of <strong>R150</strong>. Peach Payments costs are estimated at <strong>~2.95% + R1.50</strong> per transaction. Firebase costs are estimated at <strong>~R1.00</strong> per active user/month (free until massive scale).</p>
+                </div>
+            </div>
+        </section>
+
+        <main class="models-grid">
+            <!-- Model 1 -->
+            <article class="model-card glass-card fade-in-up delay-2">
+                <div class="model-header">
+                    <span class="model-number">01</span>
+                    <h2>The "Free Washes" Model</h2>
+                    <span class="badge">The Original Concept</span>
+                </div>
+                <p class="description">The user pays a high monthly subscription fee and gets a set number of "free" car washes per month.</p>
+                
+                <div class="metrics">
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">R349 / mo</span><span class="subtext">for 4 washes</span></div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R11.80</span><span class="subtext">per sub charge</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
+                </div>
+                
+                <div class="liability">
+                    <strong>Partner Liability:</strong> Washi pays the car wash ~R80 - R100 per wash. If the user uses all 4 washes, Washi pays R320 - R400 to partners.
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>High guaranteed upfront revenue (R349 per user).</li>
+                            <li>Great for B2B fleet managers who want predictable monthly expenses.</li>
+                            <li>"Breakage" is highly profitable if users wash less than allocated.</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Disadvantages</h4>
+                        <div class="alert warning">
+                            <strong>⚠️ High financial risk</strong><br>If users actually use all 4 washes, Washi will likely take a loss on that customer.
+                        </div>
+                        <ul>
+                            <li>Very high barrier to entry for regular consumers. R349 is a lot to commit to upfront.</li>
+                            <li>Hard to negotiate with car washes as Washi forces them to accept a severely discounted rate.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Model 2 -->
+            <article class="model-card glass-card fade-in-up delay-3">
+                <div class="model-header">
+                    <span class="model-number">02</span>
+                    <h2>The "Upfront Discount" Model</h2>
+                </div>
+                <p class="description">The user pays a medium subscription fee to unlock a massive flat discount (e.g., 40% off) at any partner car wash.</p>
+                
+                <div class="metrics">
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">R149 / mo</span></div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R5.90</span><span class="subtext">per sub charge</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
+                </div>
+                
+                <div class="liability">
+                    <strong>Partner Liability:</strong> The user pays the car wash directly, but at a 40% discount (R90 instead of R150).
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Immediate gratification for the user (savings seen instantly).</li>
+                            <li>Zero financial liability for Washi per wash. The R149 subscription is almost pure profit.</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Disadvantages</h4>
+                        <div class="alert caution">
+                            <strong>🛑 Extremely difficult to sell</strong><br>Car washes hate giving massive upfront discounts because it destroys daily cash flow.
+                        </div>
+                        <ul>
+                            <li>You will struggle to convince premium car washes to accept 40% less money upfront just to be on the app.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Model 3 -->
+            <article class="model-card glass-card fade-in-up delay-4 highlight-border">
+                <div class="model-header">
+                    <span class="model-number">03</span>
+                    <h2>Micro-Sub + Cashback</h2>
+                    <span class="badge success">Current Prototype</span>
+                </div>
+                <p class="description">The user pays a small monthly fee to earn 15% cashback into an in-app wallet every wash. Full price is paid at the till.</p>
+                
+                <div class="metrics">
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">R69 / mo</span></div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">~R3.53</span><span class="subtext">per sub charge</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
+                </div>
+                
+                <div class="liability">
+                    <strong>Partner Liability:</strong> Washi funds 5% and the Car Wash funds 10%. (Washi pays R7.50, Car wash pays R15.00 into the wallet).
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Advantages</h4>
+                        <div class="alert tip">
+                            <strong>💡 Recommended</strong><br>The most balanced and scalable model for South Africa.
+                        </div>
+                        <ul>
+                            <li>Extremely easy to sell to users (R69 is the price of a coffee; it's a "no-brainer").</li>
+                            <li>Easy to sell to car washes: They get full price at the till, and only fund a deferred 10% loyalty rebate.</li>
+                            <li>Massive psychological "Lock-In": Users won't go to competitors with R100 in their Washi wallet.</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Disadvantages</h4>
+                        <ul>
+                            <li>"Double Friction": User pays a sub *and* full price initially, marketing must explain wallet benefits clearly.</li>
+                            <li>Must build and maintain a secure wallet/ledger database in Firebase to track digital money perfectly.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Model 4 -->
+            <article class="model-card glass-card fade-in-up delay-5 star-border">
+                <div class="model-header">
+                    <span class="model-number">04</span>
+                    <h2>"Freemium" Wallet Model</h2>
+                    <span class="badge primary">Starbucks Strategy</span>
+                </div>
+                <p class="description">App and wallet are 100% free. Earn 5% cashback. Upgrade to "Washi Plus" for a monthly fee to earn 20% and VIP perks.</p>
+                
+                <div class="metrics">
+                    <div class="metric"><span class="label">Customer Price</span><span class="value">Free / R99</span><span class="subtext">Base / Plus</span></div>
+                    <div class="metric"><span class="label">Payment Cost</span><span class="value">R0 / ~R4.42</span><span class="subtext">Base / Plus</span></div>
+                    <div class="metric"><span class="label">Server Cost</span><span class="value">~R1.00</span><span class="subtext">per month</span></div>
+                </div>
+                
+                <div class="liability">
+                    <strong>Partner Liability:</strong> Washi and the Car Wash split the cashback funding.
+                </div>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>Advantages</h4>
+                        <div class="alert important">
+                            <strong>🔥 Top Strategy</strong><br>The absolute best strategy for rapid user growth.
+                        </div>
+                        <ul>
+                            <li>Zero barrier to entry. Anyone can download and start earning.</li>
+                            <li>Thousands of users can be onboarded quickly, giving leverage when negotiating with partners.</li>
+                            <li>Highly effective upsell funnel (showing users potential earnings with Washi Plus).</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>Disadvantages</h4>
+                        <ul>
+                            <li>Slower path to initial revenue; supporting free users on servers before they upgrade.</li>
+                            <li>Requires strict negotiations with car washes to fund cashback for free users (no sub revenue to subsidize).</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </main>
+        
+        <footer>
+            <p>Washi App &copy; 2026 - Confidential Business Analysis</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
